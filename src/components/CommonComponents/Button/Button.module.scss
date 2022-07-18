@@ -1,0 +1,19 @@
+.button {
+  background-color: #c6006d; /* Green */
+  border: none;
+  color: white;
+  padding: 13px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 6px;
+  margin-left: 28px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  .icon {
+    & > :first-child {
+      margin-top: -3px;
+    }
+  }
+}

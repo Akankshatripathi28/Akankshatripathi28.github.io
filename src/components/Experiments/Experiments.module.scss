@@ -1,0 +1,25 @@
+.cardContainer {
+  .heading {
+    margin-top: 8px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    line-height: 20px;
+    padding-bottom: 4px;
+    color: teal;
+    padding-top: 20px;
+  }
+  .subText {
+    text-align: center;
+    padding-bottom: 6px;
+    padding-top: 10px;
+    .text {
+      font-family: "Inter", sans-serif;
+
+      font-size: 12px;
+      line-height: 20px;
+      color: grey;
+    }
+  }
+}

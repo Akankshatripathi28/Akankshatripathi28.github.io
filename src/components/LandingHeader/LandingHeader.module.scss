@@ -1,0 +1,62 @@
+.main {
+  background-color: #f5fcff;
+  .innerMain {
+    display: flex;
+    justify-content: space-between;
+
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 16px;
+      margin-left: auto;
+      margin-right: auto;
+      .navLogo {
+        min-width: 30%;
+        margin-left: 16px;
+        .busin {
+          font-size: 3rem;
+          font-weight: 500;
+          color: #1e3f66;
+          font-family: "Kanit", sans-serif;
+          margin-right: 32px;
+        }
+      }
+      .HeaderLink {
+        //justify-content: space-between;
+        margin: 12px 6px 6px 6px !important;
+        font-family: "Roboto", sans-serif;
+      }
+    }
+    .rightSide {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 16px;
+      margin-left: auto;
+      margin-right: auto;
+      .innerRight {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+  .bottomMain {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 32px;
+    .innerBottom {
+      flex: 50%;
+      & > :first-child {
+        height: 324px;
+        margin-left: 24px;
+        margin-bottom: 8px;
+      }
+      .RightBottom {
+        flex: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.outerWrapper {
+  background-color: white;
+
+  border-radius: 20px;
+  .cardWrapper {
+    width: 1000px;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    margin: auto;
+    padding-top: 100px;
+    column-gap: 24px;
+    .cardContainer {
+      width: 310px;
+      .imagDiv {
+        .imagmain {
+          border-radius: 4px;
+          height: 235px;
+          width: 300px;
+        }
+      }
+      .headerDiv {
+        margin-top: 16px;
+        color: teal;
+      }
+      .read {
+        margin-top: 12px;
+        display: flex;
+
+        .innerRead {
+          color: gray;
+          font-size: 14px;
+          margin: 2px;
+          font-size: bold;
+        }
+      }
+      .arrow {
+        height: 5px;
+        width: 5px;
+        color: gray;
+        margin-left: 5px;
+      }
+    }
+  }
+}
