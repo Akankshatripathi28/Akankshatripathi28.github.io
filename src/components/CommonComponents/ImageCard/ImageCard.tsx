@@ -7,9 +7,9 @@ const ImageCard = () => {
   return (
     <div className={styles.outerWrapper}>
       <div className={styles.cardWrapper}>
-        {news.map((index: any) => {
+        {news.map((index: any, i: any) => {
           return (
-            <div className={styles.cardContainer}>
+            <div key={`index-${i}`} className={styles.cardContainer}>
               <div className={styles.imagDiv}>
                 <img className={styles.imagmain} src={dummy} />
               </div>

@@ -6,9 +6,9 @@ import styles from "./BrandCard.module.scss";
 const BrandCards = () => {
   return (
     <div className={styles.mainCard}>
-      {CardContent.map((index: any) => {
+      {CardContent.map((index: any, i: any) => {
         return (
-          <div className={styles.innermainCard}>
+          <div key={`index-${i}`} className={styles.innermainCard}>
             <Card
               logo={<ManageAccountsIcon className={styles.icon} />}
               heading={index.heading}

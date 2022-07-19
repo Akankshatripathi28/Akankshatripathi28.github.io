@@ -5,9 +5,9 @@ import ImageCard from "../CommonComponents/ImageCard/ImageCard";
 const Experiments = () => {
   return (
     <div className={styles.cardContainer}>
-      {Thoughts.map((index: any) => {
+      {Thoughts.map((index: any, i: any) => {
         return (
-          <div>
+          <div key={`index-${i}`}>
             <div className={styles.heading}>
               <span>{index.header}</span>
             </div>

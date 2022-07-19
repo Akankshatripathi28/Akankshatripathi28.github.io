@@ -9,7 +9,6 @@ import First from "../../img/First.jpg";
 import Solution from "../BottomHeaderRight/Solution";
 
 const LandingHeader = () => {
-  console.log("whdhe", NavBarTitle);
   return (
     <div className={styles.main}>
       <div className={styles.innerMain}>
@@ -18,9 +17,14 @@ const LandingHeader = () => {
             <div className={styles.busin}>BUSIN</div>
           </div>
           <div>
-            {NavBarTitle.map((i) => {
+            {NavBarTitle.map((i: any, index: any) => {
               return (
-                <Link className={styles.HeaderLink} href="#" underline="none">
+                <Link
+                  key={`i-${index}`}
+                  className={styles.HeaderLink}
+                  href="#"
+                  underline="none"
+                >
                   {i.name}
                 </Link>
               );
