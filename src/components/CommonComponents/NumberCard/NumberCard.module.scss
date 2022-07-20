@@ -1,0 +1,66 @@
+.numberCardDiv {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+  // row-gap: 24px;
+  justify-content: space-between;
+  .halfbg {
+    height: 130px;
+    width: 250px;
+    border: 1px solid rgb(233, 230, 230);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(105, 159, 175);
+
+    .innerDiv {
+      position: relative;
+      top: 22px;
+      right: 0px;
+      height: 250px;
+      width: 200px;
+      border: 1px solid rgb(233, 230, 230);
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      column-gap: 12px;
+      margin-left: 20px;
+      margin-right: 20px;
+      box-shadow: -1px 5px 2px 0px rgb(187, 185, 185);
+      align-items: center;
+      background-color: white;
+
+      // height: 100px;
+      // width: 100px;
+      .imagMain {
+        display: flex;
+        justify-content: center;
+        left: auto;
+        right: auto;
+        .innerimagMain {
+          height: 100px;
+          width: 100px;
+          margin-top: 20px;
+          border-radius: 10px;
+          margin-bottom: 12px;
+        }
+      }
+      .title {
+        font-size: 2.5rem;
+        max-width: 50%;
+        color: rgb(17, 79, 90);
+        font-weight: bold;
+        margin-bottom: 12px;
+      }
+      .content {
+        font-size: 10px;
+        max-width: 50%;
+        color: rgb(17, 79, 90);
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

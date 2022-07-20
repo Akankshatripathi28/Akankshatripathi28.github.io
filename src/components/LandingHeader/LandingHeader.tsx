@@ -5,7 +5,7 @@ import { NavBarTitle } from "../../jsonFiles/NavBarTitle";
 import { OverrideMaterialStyle } from "../../styles/OverrideMaterialUi";
 import SearchIcon from "@mui/icons-material/Search";
 import InputButton from "../CommonComponents/Button/InputButton";
-import First from "../../img/First.jpg";
+import First from "../../../public/img/First.jpg";
 import Solution from "../BottomHeaderRight/Solution";
 
 const LandingHeader = () => {
@@ -40,7 +40,7 @@ const LandingHeader = () => {
       </div>
       <div className={styles.bottomMain}>
         <div className={styles.innerBottom}>
-          <img src={First} />
+          <img src="/img/First.jpg" />
         </div>
         <div className={styles.RightBottom}>
           <Solution

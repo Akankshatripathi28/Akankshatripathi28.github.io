@@ -1,11 +1,12 @@
 import styles from "./BrandingPage.module.scss";
 import React from "react";
 import InputButton from "../CommonComponents/Button/InputButton";
+
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import BrandCards from "../BrandCards/BrandCards";
-import First from "../../img/First.jpg";
+
 import Solution from "../BottomHeaderRight/Solution";
-import bussiness from "../../img/bussiness.png";
+import bussiness from "../../../public/img/bussiness.png";
 const BrandingPage = () => {
   return (
     <div className={styles.mainn}>
@@ -30,7 +31,7 @@ const BrandingPage = () => {
       <div>
         <div className={styles.bottomMain}>
           <div className={styles.innerBottom}>
-            <img src={bussiness} />
+            <img src="/img/bussiness.png" />
           </div>
           <div className={styles.RightBottom}>
             <Solution

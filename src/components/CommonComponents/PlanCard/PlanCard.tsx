@@ -1,6 +1,6 @@
 import styles from "./PlanCard.module.scss";
-import check from "../../../img/check.png";
-import close from "../../../img/check.png";
+import check from "../../../../public/img/check.png";
+import close from "../../../../public/img/close.png";
 import React from "react";
 import { Button } from "@mui/material";
 
@@ -25,7 +25,13 @@ const PlanCard = (props: { data?: any }) => {
               return (
                 <div key={`lists-${index}`} className={styles.cardContainer}>
                   <span className={styles.icon}>
-                    <img src={lists.icon === "check" ? check : close} />
+                    <img
+                      src={
+                        lists.icon === "check"
+                          ? "/img/check.png"
+                          : "/img/close.png"
+                      }
+                    />
                   </span>
                   <span
                     className={
