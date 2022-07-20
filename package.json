@@ -2,7 +2,7 @@
   "name": "demo-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Akankshatripathi28.github.io/Akankshatripathi28.github.io",
+  "homepage": "http://Akankshatripathi28.github.io/demo-react-app",
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
