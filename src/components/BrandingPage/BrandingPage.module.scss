@@ -35,9 +35,13 @@
       border: 1px solid $tertiary-font-color;
       font-weight: lighter;
       @include alignmentStyle(null, center);
-      padding: 9px 27px;
+      padding: 10px 27px;
       & > :first-child {
         align-items: center;
+        margin-top: 2px;
+      }
+      & > :last-child {
+        margin-top: 2px;
       }
     }
   }

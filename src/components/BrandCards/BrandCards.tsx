@@ -3,6 +3,7 @@ import Card from "../CommonComponents/Card/Card";
 import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
 import { CardContent } from "../../jsonFiles/CardContent";
 import styles from "./BrandCard.module.scss";
+
 const BrandCards = () => {
   return (
     <div className={styles.mainCard}>
@@ -10,7 +11,7 @@ const BrandCards = () => {
         return (
           <div key={`index-${i}`} className={styles.innermainCard}>
             <Card
-              logo={<ManageAccountsIcon className={styles.icon} />}
+              logo="/img/coloricon.png"
               heading={index.heading}
               content={index.content}
             />

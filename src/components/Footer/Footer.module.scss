@@ -14,6 +14,7 @@
   margin-top: 30px;
 
   margin-left: 4px;
+
   .maindiv {
     display: flex;
     flex-direction: column;
@@ -76,6 +77,8 @@
   .secondmain {
     display: flex;
     flex-direction: column;
+    padding: 30px;
+
     .headd {
       font-family: $font-family-inter;
       font-weight: bold;
@@ -94,6 +97,21 @@
       padding-bottom: 4px;
       color: $tertiary-font-color;
       margin-bottom: 8px;
+    }
+    .contentsHigh {
+      font-weight: bold;
+      color: rgb(23, 90, 90);
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      text-align: center;
+      line-height: 20px;
+      padding-bottom: 4px;
+    }
+  }
+  .logomain {
+    @include alignmentStyle(row, space-between);
+    .imagstyle {
+      @include heightWidth(30px, 30px);
     }
   }
 }

@@ -14,7 +14,9 @@ const Card = (props: Iprops) => {
   return (
     <div className={styles.card}>
       <div className={styles.innerWrapper}>
-        <div className={classNames(styles.logo, className)}>{logo}</div>
+        <div className={classNames(styles.logo, className)}>
+          <img className={styles.imagelogo} src={logo} alt=""></img>
+        </div>
         <div className={styles.heading}>{heading}</div>
         <div className={styles.content}>{content}</div>
         <div className={styles.read}>

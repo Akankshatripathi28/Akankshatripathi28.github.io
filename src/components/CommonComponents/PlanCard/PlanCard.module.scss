@@ -67,28 +67,10 @@
       .btnWrapper {
         padding-top: 24px;
         .getStartedButton {
-          background: $secondary-background-color;
+          background: white;
           border: none;
           border-radius: 7px;
           color: black;
-          font-size: 16px;
-          min-height: 36px;
-          padding: 0;
-          width: 100px;
-          .buttonText {
-            text-transform: none;
-            transition: none;
-            font-size: 12px;
-          }
-        }
-      }
-      .btnWrapper:hover {
-        padding-top: 24px;
-        .getStartedButton {
-          background: $background-color;
-          border: none;
-          border-radius: 7px;
-          color: $secondary-background-color;
           font-size: 16px;
           min-height: 36px;
           padding: 0;
@@ -107,4 +89,26 @@
   border: 2px solid $primary-border-color;
   border-radius: 20px;
   background-color: $border-color-gray-shade;
+  .innerWrapper {
+    .body {
+      .btnWrapper {
+        padding-top: 24px;
+        .getStartedButton {
+          background: $number-card-border-color;
+          border: none;
+          border-radius: 7px;
+          color: $secondary-background-color;
+          font-size: 16px;
+          min-height: 36px;
+          padding: 0;
+          width: 100px;
+          .buttonText {
+            text-transform: none;
+            transition: none;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
 }

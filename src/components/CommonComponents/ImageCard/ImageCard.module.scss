@@ -1,7 +1,7 @@
 @import "../../../global.scss";
 .outerWrapper {
   background-color: $secondary-background-color;
-
+  margin-bottom: 40px;
   border-radius: 20px;
   .cardWrapper {
     @include heightWidth(null, 1000px);

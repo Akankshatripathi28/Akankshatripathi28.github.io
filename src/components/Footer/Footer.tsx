@@ -33,16 +33,30 @@ const Footer = () => {
       </div>
       <div className={styles.secondmain}>
         <div className={styles.headd}>Recent post</div>
-        <div className={styles.contents}>on the head with free internet</div>
+        <div className={styles.contentsHigh}>
+          on the head with free internet
+        </div>
         <div className={styles.contents}>turpisoda</div>
       </div>
-      <div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
+      <div className={styles.secondmain}>
+        <div className={styles.headd}>Get in touch</div>
+        <div className={styles.contents}>tripathiakanksha308@gmail.com</div>
+        <div className={styles.contents}>7447267179</div>
+
+        <div className={styles.logomain}>
+          <div>
+            <img className={styles.imagstyle} src="/img/insta.jpeg"></img>
+          </div>
+          <div>
+            <img className={styles.imagstyle} src="/img/fb.png"></img>
+          </div>
+          <div>
+            <img className={styles.imagstyle} src="/img/tweet.png"></img>
+          </div>
+          <div>
+            <img className={styles.imagstyle} src="/img/sky.png"></img>
+          </div>
+        </div>
       </div>
     </div>
   );

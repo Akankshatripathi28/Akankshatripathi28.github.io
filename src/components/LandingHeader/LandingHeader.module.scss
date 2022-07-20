@@ -21,6 +21,10 @@
         //justify-content: space-between;
         margin: 12px 6px 6px 6px !important;
         font-family: $font-family-roboto;
+        color: rgb(34, 120, 146);
+      }
+      .HeaderLink:hover {
+        color: rgb(14, 58, 58);
       }
     }
     .rightSide {
