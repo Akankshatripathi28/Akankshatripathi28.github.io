@@ -1,15 +1,15 @@
 {
-  "main.css": "%7BAkankshatripathi28%7D.github.io/%7BAkankshatripathi28.github.io%7D/static/css/main.e05ab112.chunk.css",
-  "main.js": "%7BAkankshatripathi28%7D.github.io/%7BAkankshatripathi28.github.io%7D/static/js/main.82ef98e0.chunk.js",
-  "main.js.map": "%7BAkankshatripathi28%7D.github.io/%7BAkankshatripathi28.github.io%7D/static/js/main.82ef98e0.chunk.js.map",
-  "static/js/1.cea470f7.chunk.js": "%7BAkankshatripathi28%7D.github.io/%7BAkankshatripathi28.github.io%7D/static/js/1.cea470f7.chunk.js",
-  "static/js/1.cea470f7.chunk.js.map": "%7BAkankshatripathi28%7D.github.io/%7BAkankshatripathi28.github.io%7D/static/js/1.cea470f7.chunk.js.map",
-  "static/js/2.ab081cb0.chunk.js": "%7BAkankshatripathi28%7D.github.io/%7BAkankshatripathi28.github.io%7D/static/js/2.ab081cb0.chunk.js",
-  "static/js/2.ab081cb0.chunk.js.map": "%7BAkankshatripathi28%7D.github.io/%7BAkankshatripathi28.github.io%7D/static/js/2.ab081cb0.chunk.js.map",
-  "runtime~main.js": "%7BAkankshatripathi28%7D.github.io/%7BAkankshatripathi28.github.io%7D/static/js/runtime~main.ad1f9877.js",
-  "runtime~main.js.map": "%7BAkankshatripathi28%7D.github.io/%7BAkankshatripathi28.github.io%7D/static/js/runtime~main.ad1f9877.js.map",
-  "static/css/main.e05ab112.chunk.css.map": "%7BAkankshatripathi28%7D.github.io/%7BAkankshatripathi28.github.io%7D/static/css/main.e05ab112.chunk.css.map",
-  "index.html": "%7BAkankshatripathi28%7D.github.io/%7BAkankshatripathi28.github.io%7D/index.html",
-  "precache-manifest.77a59027f3116680d548b40f7dad846f.js": "%7BAkankshatripathi28%7D.github.io/%7BAkankshatripathi28.github.io%7D/precache-manifest.77a59027f3116680d548b40f7dad846f.js",
-  "service-worker.js": "%7BAkankshatripathi28%7D.github.io/%7BAkankshatripathi28.github.io%7D/service-worker.js"
+  "main.css": "/demo-react-app/static/css/main.ac5436cd.chunk.css",
+  "main.js": "/demo-react-app/static/js/main.d2d99436.chunk.js",
+  "main.js.map": "/demo-react-app/static/js/main.d2d99436.chunk.js.map",
+  "static/js/1.0b25c17b.chunk.js": "/demo-react-app/static/js/1.0b25c17b.chunk.js",
+  "static/js/1.0b25c17b.chunk.js.map": "/demo-react-app/static/js/1.0b25c17b.chunk.js.map",
+  "static/js/2.33806de4.chunk.js": "/demo-react-app/static/js/2.33806de4.chunk.js",
+  "static/js/2.33806de4.chunk.js.map": "/demo-react-app/static/js/2.33806de4.chunk.js.map",
+  "runtime~main.js": "/demo-react-app/static/js/runtime~main.36e5feee.js",
+  "runtime~main.js.map": "/demo-react-app/static/js/runtime~main.36e5feee.js.map",
+  "static/css/main.ac5436cd.chunk.css.map": "/demo-react-app/static/css/main.ac5436cd.chunk.css.map",
+  "index.html": "/demo-react-app/index.html",
+  "precache-manifest.bbb6075f38a16c46ff20ce14fe3b4aa9.js": "/demo-react-app/precache-manifest.bbb6075f38a16c46ff20ce14fe3b4aa9.js",
+  "service-worker.js": "/demo-react-app/service-worker.js"
 }
