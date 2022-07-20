@@ -1,31 +1,27 @@
+@import "../../../global.scss";
 .numberCardDiv {
-  display: flex;
-  flex-direction: row;
+  @include alignmentStyle(row, space-between);
   margin-bottom: 100px;
   // row-gap: 24px;
-  justify-content: space-between;
+
   .halfbg {
-    height: 130px;
-    width: 250px;
-    border: 1px solid rgb(233, 230, 230);
+    @include heightWidth(130px, 250px);
+    border: 1px solid $border-color-white-shade;
     border-radius: 8px;
-    display: flex;
-    flex-direction: column;
+    @include alignmentStyle(column, null);
     margin-left: 20px;
     margin-right: 20px;
-    background-color: rgb(105, 159, 175);
+    background-color: $number-card-border-color;
 
     .innerDiv {
       position: relative;
       top: 22px;
       right: 0px;
-      height: 250px;
-      width: 200px;
-      border: 1px solid rgb(233, 230, 230);
+
+      @include heightWidth(250px, 200px);
+      border: 1px solid $border-color-white-shade;
       border-radius: 6px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      @include alignmentStyle(column, space-between);
       column-gap: 12px;
       margin-left: 20px;
       margin-right: 20px;
@@ -36,13 +32,11 @@
       // height: 100px;
       // width: 100px;
       .imagMain {
-        display: flex;
-        justify-content: center;
+        @include alignmentStyle(null, center);
         left: auto;
         right: auto;
         .innerimagMain {
-          height: 100px;
-          width: 100px;
+          @include heightWidth(100px, 100px);
           margin-top: 20px;
           border-radius: 10px;
           margin-bottom: 12px;
@@ -51,14 +45,14 @@
       .title {
         font-size: 2.5rem;
         max-width: 50%;
-        color: rgb(17, 79, 90);
+        color: $font-color-number;
         font-weight: bold;
         margin-bottom: 12px;
       }
       .content {
         font-size: 10px;
         max-width: 50%;
-        color: rgb(17, 79, 90);
+        color: $font-color-number;
         margin-bottom: 12px;
       }
     }

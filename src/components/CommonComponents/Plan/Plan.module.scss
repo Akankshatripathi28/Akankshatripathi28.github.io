@@ -1,28 +1,29 @@
+@import "../../../global.scss";
 .outerWrapper {
-  background-color: #f7f7f9;
-  height: 600px;
+  background-color: $card-backgound-color;
+  @include heightWidth(600px, null);
   .innerWrapper {
     .subText {
       text-align: center;
       padding-bottom: 6px;
       padding-top: 10px;
       .text {
-        font-family: "Inter", sans-serif;
+        font-family: $font-family-inter;
 
         font-size: 12px;
         line-height: 20px;
-        color: grey;
+        color: $tertiary-font-color;
       }
     }
     .heading {
       margin-top: 8px;
-      font-family: "Inter", sans-serif;
+      font-family: $font-family-inter;
       font-weight: bold;
       font-size: 32px;
       text-align: center;
       line-height: 20px;
       padding-bottom: 4px;
-      color: teal;
+      color: $secondary-font-color;
       padding-top: 20px;
     }
     .cardWrapper {
@@ -34,7 +35,7 @@
       padding-top: 100px;
       column-gap: 24px;
       .cardContainer {
-        width: 310px;
+        @include heightWidth(null, 310px);
       }
     }
   }

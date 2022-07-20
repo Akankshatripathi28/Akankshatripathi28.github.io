@@ -1,11 +1,9 @@
+@import "../../global.scss";
 .main {
   // display: flex;
   // flex-direction: column;
-  align-items: center;
   justify-content: center;
-  margin-top: 16px;
-  margin-left: auto;
-  margin-right: auto;
+  @include spacing();
   .innermain {
     display: flex;
     flex-direction: column;
@@ -16,12 +14,12 @@
     .headline {
       font-size: 2.1rem;
       max-width: 50%;
-      color: darkblue;
+      color: $primary-heading-color;
       margin-right: 250px;
     }
     .mainSubline {
       .subline {
-        color: #b8b8b8;
+        color: $secondary-subline-color;
         font-weight: 500;
         line-height: 1.5;
         padding: 30px 0;

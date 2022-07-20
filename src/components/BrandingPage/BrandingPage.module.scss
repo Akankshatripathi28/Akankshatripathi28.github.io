@@ -1,40 +1,40 @@
+@import "../../global.scss";
 .mainn {
   // background-color: red;
-  display: flex;
-  flex-direction: column;
+
+  @include alignmentStyle(column, null);
   align-items: center;
   justify-content: center;
   margin-top: 16px;
   margin-left: auto;
   margin-right: auto;
   .innermain {
-    display: flex;
-    flex-direction: column;
+    @include alignmentStyle(column, null);
   }
 
   .headline {
     font-size: 2.1rem;
     max-width: 50%;
-    color: darkblue;
+    color: $primary-heading-color;
     margin-right: 250px;
   }
   .mainSubline {
     display: flex;
     justify-content: space-around;
+    @include alignmentStyle(null, space-around);
     .subline {
-      color: #b8b8b8;
+      color: $secondary-subline-color;
       font-weight: 500;
       line-height: 1.5;
       padding: 30px 0;
     }
     .innerButton {
       border-radius: 40px;
-      background-color: white;
-      color: gray;
-      border: 1px solid gray;
+      background-color: $secondary-background-color;
+      color: $tertiary-font-color;
+      border: 1px solid $tertiary-font-color;
       font-weight: lighter;
-      display: flex;
-      justify-content: center;
+      @include alignmentStyle(null, center);
       padding: 9px 27px;
       & > :first-child {
         align-items: center;
@@ -42,8 +42,7 @@
     }
   }
   .bottomMain {
-    display: flex;
-    justify-content: center;
+    @include alignmentStyle(null, center);
     flex-wrap: nowrap;
     margin-top: 32px;
     width: 70rem;

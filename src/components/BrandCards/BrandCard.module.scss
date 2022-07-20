@@ -1,16 +1,17 @@
+@import "../../global.scss";
 .mainCard {
-  display: flex;
+  @include alignmentStyle(null, center);
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 24px;
-  justify-content: center;
+
   .innermainCard {
     display: flex;
     align-items: center;
     left: auto;
     right: auto;
     .icon {
-      color: rgb(122, 11, 30);
+      color: $button-color;
     }
   }
 }

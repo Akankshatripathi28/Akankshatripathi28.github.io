@@ -1,0 +1,40 @@
+$primary-background-color: #f5fcff;
+$secondary-background-color: white;
+$tertiary-background-color: #d5d7de;
+$primary-logo-color: #1e3f66;
+$secondary-subline-color: #b8b8b8;
+$primary-heading-color: darkblue;
+$primary-font-color: black;
+$tertiary-font-color: gray;
+$secondary-font-color: teal;
+$primary-border-color: #d1d0fd;
+$background-color: rgb(155, 65, 32);
+$border-color-gray-shade: #e4e4fa;
+$card-backgound-color: #f7f7f9;
+$border-color-white-shade: rgb(233, 230, 230);
+$number-card-border-color: rgb(105, 159, 175);
+$font-color-number: rgb(17, 79, 90);
+$card-border-color: darkgray;
+$card-header-color: rgb(12, 56, 56);
+$button-color: #c6006d;
+
+$font-family-kanit: "Kanit", sans-serif;
+$font-family-roboto: "Roboto", sans-serif;
+$font-family-inter: "Inter", sans-serif;
+
+@mixin alignmentStyle($direct, $justify) {
+  display: flex;
+  justify-content: $justify;
+  flex-direction: $direct;
+}
+
+@mixin spacing {
+  align-items: center;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@mixin heightWidth($height, $width) {
+  height: $height;
+  width: $width;
+}

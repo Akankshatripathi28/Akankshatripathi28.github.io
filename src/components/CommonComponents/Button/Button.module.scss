@@ -1,7 +1,8 @@
+@import "../../../global.scss";
 .button {
-  background-color: #c6006d; /* Green */
+  background-color: $button-color; /* Green */
   border: none;
-  color: white;
+  color: $secondary-background-color;
   padding: 13px 25px;
   text-align: center;
   text-decoration: none;
@@ -9,7 +10,7 @@
   font-size: 16px;
   border-radius: 6px;
   margin-left: 28px;
-  font-family: "Roboto", sans-serif;
+  font-family: $font-family-roboto;
   font-weight: bold;
   .icon {
     & > :first-child {

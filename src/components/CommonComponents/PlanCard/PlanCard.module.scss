@@ -1,24 +1,23 @@
+@import "../../../global.scss";
 .outerWrapper {
-  background-color: white;
-  border: 2px solid #d1d0fd;
+  background-color: $secondary-background-color;
+  border: 2px solid $primary-border-color;
   border-radius: 20px;
   .innerWrapper {
     padding: 24px;
     .header {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      @include alignmentStyle(row, space-between);
+
       .headerTextArea {
-        display: flex;
-        flex-direction: column;
+        @include alignmentStyle(column, null);
         align-self: center;
         .headerText {
-          font-family: "Inter", sans-serif;
+          font-family: $font-family-inter;
           font-weight: bold;
           line-height: 14px;
         }
         .headerDesc {
-          font-family: "Roboto", sans-serif;
+          font-family: $font-family-roboto;
           font-weight: 600;
           color: #b8b8b8;
           line-height: 30px;
@@ -26,7 +25,7 @@
       }
       .price {
         .priceBody {
-          font-family: "Inter", sans-serif;
+          font-family: $font-family-inter;
           font-weight: bold;
           font-size: 40px;
         }
@@ -35,43 +34,40 @@
     .separator {
       height: 1px;
       border-radius: 2px;
-      background-color: #d5d7de;
+      background-color: $tertiary-background-color;
       margin: 16px 0;
     }
     .body {
-      display: flex;
-      flex-direction: column;
+      @include alignmentStyle(column, null);
       .listItem {
-        display: flex;
-        flex-direction: column;
+        @include alignmentStyle(column, null);
         .cardContainer {
-          display: flex;
-          flex-direction: row;
+          @include alignmentStyle(row, null);
           .icon {
             width: calc(100% - 77%);
             & > :first-child {
-              height: 30px;
+              @include heightWidth(30px, null);
             }
           }
           .value {
-            font-family: "Inter", sans-serif;
+            font-family: $font-family-inter;
             font-weight: bold;
             font-size: 14px;
             align-self: center;
           }
           .disbaledValue {
-            font-family: "Inter", sans-serif;
+            font-family: $font-family-inter;
             font-weight: bold;
             font-size: 14px;
             align-self: center;
-            color: #b8b8b8;
+            color: $secondary-subline-color;
           }
         }
       }
       .btnWrapper {
         padding-top: 24px;
         .getStartedButton {
-          background: white;
+          background: $secondary-background-color;
           border: none;
           border-radius: 7px;
           color: black;
@@ -89,10 +85,10 @@
       .btnWrapper:hover {
         padding-top: 24px;
         .getStartedButton {
-          background: rgb(155, 65, 32);
+          background: $background-color;
           border: none;
           border-radius: 7px;
-          color: #fff;
+          color: $secondary-background-color;
           font-size: 16px;
           min-height: 36px;
           padding: 0;
@@ -108,7 +104,7 @@
   }
 }
 .outerWrapper:hover {
-  border: 2px solid #d1d0fd;
+  border: 2px solid $primary-border-color;
   border-radius: 20px;
-  background-color: #e4e4fa;
+  background-color: $border-color-gray-shade;
 }

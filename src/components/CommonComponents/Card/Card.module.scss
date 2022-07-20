@@ -1,7 +1,7 @@
+@import "../../../global.scss";
 .card {
-  width: 250px;
-  height: auto;
-  border: 1px solid rgb(224, 222, 222);
+  @include heightWidth(auto, 250px);
+  border: 1px solid $card-border-color;
 
   box-shadow: 0.5px 1px darkgrey;
   border-radius: 6px;
@@ -10,7 +10,7 @@
     .heading {
       font-size: 20px;
       max-width: fit-content;
-      color: rgb(12, 56, 56);
+      color: $card-header-color;
       font-weight: bold;
       margin-bottom: 8px;
       margin-top: 8px;
@@ -19,7 +19,7 @@
       font-size: 12px;
       max-width: -moz-fit-content;
       max-width: fit-content;
-      color: teal;
+      color: $secondary-font-color;
       margin: 16px 0px;
     }
     .read {
@@ -27,16 +27,15 @@
       display: flex;
 
       .innerRead {
-        color: gray;
+        color: $tertiary-font-color;
         font-size: 14px;
         margin: 2px;
         font-size: bold;
       }
     }
     .arrow {
-      height: 5px;
-      width: 5px;
-      color: gray;
+      @include heightWidth(5px, 5px);
+      color: $tertiary-font-color;
       margin-left: 5px;
     }
   }

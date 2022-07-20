@@ -1,16 +1,18 @@
+@import "../../global.scss";
+
 .footer {
   // background-color: paleturquoise;
   position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #f5fcff;
-  display: flex;
-  flex-direction: row;
-  color: black;
+  @include alignmentStyle(row, space-between);
+  background-color: $primary-background-color;
+
+  color: $primary-font-color;
   text-align: center;
   margin-top: 30px;
-  justify-content: space-between;
+
   margin-left: 4px;
   .maindiv {
     display: flex;
@@ -23,16 +25,16 @@
       .busin {
         font-size: 1.5rem;
         font-weight: 500;
-        color: teal;
-        font-family: "Kanit", sans-serif;
+        color: $secondary-font-color;
+        font-family: $font-family-kanit;
         margin-right: 32px;
       }
     }
 
     .textbox {
-      background-color: white;
-      width: 235px;
-      height: 38px;
+      background-color: $secondary-background-color;
+
+      @include heightWidth(38px, 235px);
       border: 1px solid transparent;
       border-radius: 20px;
       display: flex;
@@ -40,7 +42,8 @@
       // justify-content: space-between;
       & > :first-child {
         padding-left: 6px;
-        height: 30px;
+
+        @include heightWidth(30px, null);
         margin-left: 12px;
         border: 1px solid transparent;
         outline: none;
@@ -55,9 +58,8 @@
         border: 1px solid transparent;
       }
       .arrow {
-        height: 5px;
-        width: 5px;
-        color: gray;
+        @include heightWidth(5px, 5px);
+        color: $tertiary-font-color;
         margin-left: 5px;
       }
     }
@@ -68,30 +70,29 @@
       text-align: center;
       line-height: 20px;
       padding-bottom: 4px;
-      color: gray;
+      color: $tertiary-font-color;
     }
   }
   .secondmain {
     display: flex;
     flex-direction: column;
     .headd {
-      font-family: "Inter", sans-serif;
+      font-family: $font-family-inter;
       font-weight: bold;
       font-size: 20px;
       text-align: center;
       line-height: 20px;
       padding-bottom: 4px;
-      color: teal;
+      color: $secondary-font-color;
       margin-bottom: 6px;
     }
     .contents {
-      font-family: "Inter", sans-serif;
-
-      font-size: 12pxpx;
+      font-family: $font-family-inter;
+      font-size: 12px;
       text-align: center;
       line-height: 20px;
       padding-bottom: 4px;
-      color: gray;
+      color: $tertiary-font-color;
       margin-bottom: 8px;
     }
   }

@@ -6,9 +6,9 @@ const NumberCard = () => {
     <div className={styles.numberCardDiv}>
       {CardJson.map((index: any, i: any) => {
         return (
-          <div className={styles.halfbg}>
+          <div key={`index-${i}`} className={styles.halfbg}>
             <div className={styles.innerDiv}>
-              <div className={styles.imagMain} key={`i-${index}`}>
+              <div className={styles.imagMain} key={`index-${i}`}>
                 <img className={styles.innerimagMain} src={index.firstImg} />
               </div>
 
