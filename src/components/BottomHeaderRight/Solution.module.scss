@@ -1,4 +1,5 @@
 @import "../../global.scss";
+@import "../../responsiveGlobal.scss";
 .contentRight {
   min-width: 50%;
   text-align: left;
@@ -12,5 +13,31 @@
     font-weight: 500;
     line-height: 1.5;
     padding: 30px 0;
+  }
+}
+@include for-ipad-portrait {
+  .contentRight {
+    // min-width: 50%;
+    // text-align: left;
+    .headline {
+      // font-size: 2.5rem;
+      // max-width: 80%;
+      // color: $primary-heading-color;
+    }
+    .subline {
+      // color: $secondary-subline-color;
+      // font-weight: 500;
+      // line-height: 1.5;
+      // padding: 30px 0;
+      width: 50%;
+    }
+  }
+}
+@include for-phone-only {
+  .contentRight {
+    text-align: center;
+    .headline {
+      max-width: 100%;
+    }
   }
 }

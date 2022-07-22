@@ -3,13 +3,23 @@
     @content;
   }
 }
-@mixin for-tablet-landscape-up {
-  @media (max-height: 600px) and (orientation: landscape) {
+@mixin for-ipad-landscape {
+  @media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     @content;
   }
 }
-@mixin for-tablet-portrait-up {
+@mixin for-ipad-portrait {
   @media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    @content;
+  }
+}
+@mixin for-ipadPro-landscape {
+  @media (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
+    @content;
+  }
+}
+@mixin for-ipadPro-portrait {
+  @media (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
     @content;
   }
 }

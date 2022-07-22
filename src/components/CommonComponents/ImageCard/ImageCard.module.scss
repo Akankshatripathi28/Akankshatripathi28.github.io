@@ -1,4 +1,5 @@
 @import "../../../global.scss";
+@import "../../../responsiveGlobal.scss";
 .outerWrapper {
   background-color: $secondary-background-color;
   margin-bottom: 40px;
@@ -11,12 +12,16 @@
     margin: auto;
     padding-top: 100px;
     column-gap: 24px;
+
     .cardContainer {
       @include heightWidth(null, 310px);
       .imagDiv {
         .imagmain {
           border-radius: 4px;
           @include heightWidth(235px, 300px);
+          @include for-ipad-portrait {
+            @include heightWidth(189px, 200px);
+          }
         }
       }
       .headerDiv {
@@ -39,6 +44,25 @@
         color: $tertiary-font-color;
         margin-left: 5px;
       }
+    }
+  }
+}
+@include for-ipadPro-portrait {
+  .outerWrapper {
+    .cardWrapper {
+      width: fit-content;
+    }
+  }
+}
+@include for-phone-only {
+  .outerWrapper {
+    .cardWrapper {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 12px;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

@@ -10,7 +10,7 @@ const Performancee = () => {
         <div className={styles.mainSubline}>
           <div className={styles.subline}>{PerformanceeJson.subHeading}</div>
         </div>
-        <div>
+        <div className={styles.numberCardStyle}>
           <NumberCard />
         </div>
       </div>

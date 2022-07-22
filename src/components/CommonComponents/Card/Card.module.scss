@@ -1,8 +1,11 @@
 @import "../../../global.scss";
+@import "../../../responsiveGlobal.scss";
 .card {
   @include heightWidth(auto, 250px);
   border: 1px solid rgb(238, 236, 236);
-
+  @include for-ipad-portrait {
+    width: 250px;
+  }
   box-shadow: 0.5px 1px darkgrey;
   border-radius: 6px;
   .innerWrapper {

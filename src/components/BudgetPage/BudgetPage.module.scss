@@ -1,4 +1,10 @@
+@import "../../responsiveGlobal.scss";
 .budgetmain {
   // background-color: palegreen;
   padding: 16px;
+}
+@include for-ipad-portrait {
+  .budgetmain {
+    padding: 16px 0px 16px 0px;
+  }
 }

@@ -1,12 +1,12 @@
 @import "../../global.scss";
-
+@import "../../responsiveGlobal.scss";
 .footer {
   // background-color: paleturquoise;
   position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
-  @include alignmentStyle(row, space-between);
+
   background-color: $primary-background-color;
 
   color: $primary-font-color;
@@ -14,104 +14,120 @@
   margin-top: 30px;
 
   margin-left: 4px;
-
-  .maindiv {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    .navLogo {
-      min-width: 30%;
-      margin-left: 16px;
-      top: 0;
-      .busin {
-        font-size: 1.5rem;
-        font-weight: 500;
-        color: $secondary-font-color;
-        font-family: $font-family-kanit;
-        margin-right: 32px;
-      }
-    }
-
-    .textbox {
-      background-color: $secondary-background-color;
-
-      @include heightWidth(38px, 235px);
-      border: 1px solid transparent;
-      border-radius: 20px;
-      display: flex;
-      flex-direction: row;
-      // justify-content: space-between;
-      & > :first-child {
-        padding-left: 6px;
-
-        @include heightWidth(30px, null);
-        margin-left: 12px;
-        border: 1px solid transparent;
-        outline: none;
-      }
-      .icon {
-        align-self: center;
-        margin-right: -30px;
-        cursor: pointer;
-      }
-      & > :first-child:hover,
-      :focus {
-        border: 1px solid transparent;
-      }
-      .arrow {
-        @include heightWidth(5px, 5px);
-        color: $tertiary-font-color;
-        margin-left: 5px;
-      }
-    }
-
-    .contents {
-      font-family: "Inter", sans-serif;
-      font-size: 12px;
-      text-align: center;
-      line-height: 20px;
-      padding-bottom: 4px;
-      color: $tertiary-font-color;
-    }
-  }
-  .secondmain {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-
-    .headd {
-      font-family: $font-family-inter;
-      font-weight: bold;
-      font-size: 20px;
-      text-align: center;
-      line-height: 20px;
-      padding-bottom: 4px;
-      color: $secondary-font-color;
-      margin-bottom: 6px;
-    }
-    .contents {
-      font-family: $font-family-inter;
-      font-size: 12px;
-      text-align: center;
-      line-height: 20px;
-      padding-bottom: 4px;
-      color: $tertiary-font-color;
-      margin-bottom: 8px;
-    }
-    .contentsHigh {
-      font-weight: bold;
-      color: rgb(23, 90, 90);
-      font-family: "Inter", sans-serif;
-      font-size: 14px;
-      text-align: center;
-      line-height: 20px;
-      padding-bottom: 4px;
-    }
-  }
-  .logomain {
+  .footerOuterDiv {
     @include alignmentStyle(row, space-between);
-    .imagstyle {
-      @include heightWidth(30px, 30px);
+    .maindiv {
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      .navLogo {
+        min-width: 30%;
+        margin-left: 16px;
+        top: 0;
+        .busin {
+          font-size: 1.5rem;
+          font-weight: 500;
+          color: $secondary-font-color;
+          font-family: $font-family-kanit;
+          margin-right: 32px;
+        }
+      }
+
+      .textbox {
+        background-color: $secondary-background-color;
+
+        @include heightWidth(38px, 235px);
+        border: 1px solid transparent;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        // justify-content: space-between;
+        & > :first-child {
+          padding-left: 6px;
+
+          @include heightWidth(30px, null);
+          margin-left: 12px;
+          border: 1px solid transparent;
+          outline: none;
+        }
+        .icon {
+          align-self: center;
+          margin-right: -30px;
+          cursor: pointer;
+        }
+        & > :first-child:hover,
+        :focus {
+          border: 1px solid transparent;
+        }
+        .arrow {
+          @include heightWidth(5px, 5px);
+          color: $tertiary-font-color;
+          margin-left: 5px;
+        }
+      }
+
+      .contents {
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+        text-align: center;
+        line-height: 20px;
+        padding-bottom: 4px;
+        color: $tertiary-font-color;
+      }
+    }
+    .secondmain {
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+
+      .headd {
+        font-family: $font-family-inter;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        line-height: 20px;
+        padding-bottom: 4px;
+        color: $secondary-font-color;
+        margin-bottom: 6px;
+      }
+      .contents {
+        font-family: $font-family-inter;
+        font-size: 12px;
+        text-align: center;
+        line-height: 20px;
+        padding-bottom: 4px;
+        color: $tertiary-font-color;
+        margin-bottom: 8px;
+      }
+      .contentsHigh {
+        font-weight: bold;
+        color: rgb(23, 90, 90);
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        text-align: center;
+        line-height: 20px;
+        padding-bottom: 4px;
+      }
+    }
+    .logomain {
+      @include alignmentStyle(row, space-between);
+      .imagstyle {
+        @include heightWidth(30px, 30px);
+      }
+    }
+  }
+}
+@include for-phone-only {
+  .footer {
+    width: fit-content;
+    .footerOuterDiv {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      grid-column-gap: 24px;
+      column-gap: 24px;
+      grid-row-gap: 24px;
+      row-gap: 24px;
     }
   }
 }

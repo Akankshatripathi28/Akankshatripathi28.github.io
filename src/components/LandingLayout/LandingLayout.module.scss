@@ -1,0 +1,13 @@
+@import "../../responsiveGlobal.scss";
+.mainLayout {
+}
+@include for-ipad-portrait {
+  .mainLayout {
+    overflow-x: hidden;
+  }
+}
+@include for-phone-only {
+  .mainLayout {
+    overflow-x: hidden;
+  }
+}

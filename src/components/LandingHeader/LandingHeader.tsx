@@ -32,7 +32,7 @@ const LandingHeader = () => {
         </div>
         <div className={styles.rightSide}>
           <div className={styles.innerRight}>
-            <SearchIcon color="action" />
+            <SearchIcon className={styles.icon} color="action" />
             <InputButton buttonName="Get Started" />
           </div>
         </div>

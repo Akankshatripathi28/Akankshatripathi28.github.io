@@ -1,4 +1,5 @@
 @import "../../global.scss";
+@import "../../responsiveGlobal.scss";
 .main {
   background-color: $primary-background-color;
   .innerMain {
@@ -6,6 +7,10 @@
     .links {
       @include alignmentStyle(null, space-between);
       @include spacing();
+      // @include for-ipad-portrait {
+      //   margin-left: 0px;
+      //   margin-right: 0px;
+      // }
       .navLogo {
         min-width: 30%;
         margin-left: 16px;
@@ -22,6 +27,9 @@
         margin: 12px 6px 6px 6px !important;
         font-family: $font-family-roboto;
         color: rgb(34, 120, 146);
+        // @include for-ipad-portrait {
+        //   font-size: 12px;
+        // }
       }
       .HeaderLink:hover {
         color: rgb(14, 58, 58);
@@ -33,6 +41,8 @@
       .innerRight {
         @include alignmentStyle(null, space-between);
         align-items: center;
+        .icon {
+        }
       }
     }
   }
@@ -49,6 +59,77 @@
       }
       .RightBottom {
         flex: 50%;
+      }
+    }
+  }
+}
+@include for-ipad-portrait {
+  .main {
+    font-size: 12px;
+    width: auto;
+    .innerMain {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 20px;
+      .links {
+        margin-left: 0;
+        justify-content: unset;
+      }
+      .rightSide {
+        margin-right: 26px;
+      }
+    }
+    .bottomMain {
+      .innerBottom {
+        // flex: 50%;
+        & > :first-child {
+          height: 324px;
+          width: 325px;
+          margin-left: 24px;
+          margin-bottom: 8px;
+        }
+        .RightBottom {
+          flex: 50%;
+        }
+      }
+    }
+  }
+}
+@include for-phone-only {
+  .main {
+    width: auto;
+    .innerMain {
+      display: flex;
+      flex-direction: column;
+      .links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px;
+        .navLogo {
+          .busin {
+            font-size: 1.5rem;
+          }
+        }
+      }
+      .rightSide {
+        .innerRight {
+          .icon {
+            display: none;
+          }
+        }
+      }
+    }
+    .bottomMain {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      width: auto;
+      .innerBottom {
+        height: 300px;
+        width: 300px;
+        justify-content: center;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
   }
